@@ -1,0 +1,13 @@
+[Unit]
+Description=Inlay local Parakeet and Qwen inference (on demand)
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/inlay server-start
+RuntimeDirectory=inlay-server
+RuntimeDirectoryMode=0700
+UMask=0077
+TimeoutStopSec=15
+KillMode=control-group
+Restart=no

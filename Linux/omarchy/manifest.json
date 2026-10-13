@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "rohan.inlay-indicator",
+  "name": "Inlay Recording Bubble",
+  "version": "1.0.0",
+  "author": "Rohan Patnaik",
+  "license": "MIT",
+  "description": "Headless Inlay Linux recording and processing bubble.",
+  "kinds": [
+    "panel"
+  ],
+  "keepLoaded": true,
+  "entryPoints": {
+    "panel": "Indicator.qml"
+  }
+}

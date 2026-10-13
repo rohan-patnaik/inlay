@@ -1,0 +1,6 @@
+[Unit]
+Description=Release Inlay model memory after one idle minute
+[Timer]
+OnActiveSec=60
+AccuracySec=1
+Unit=inlay-idle.service

@@ -1,5 +1,7 @@
 # Inlay
 
+**This fork adds a fully local, headless Omarchy Linux desktop adapter. See [Linux setup](Linux/README.md).** The original macOS documentation follows.
+
 Hold a key, speak, and release to insert your dictation. Inlay is a native Swift macOS app backed by a Bun-compiled TypeScript/Fastify model server running on the same Mac, another Mac, or Linux. Audio uploads while you speak; the server returns progress and one finished transcript. You can start another take immediately: finished recordings queue on the server, and each result returns to its originating client for delivery.
 
 The dev runner builds **Inlay Dev**, with separate settings and visible Dev labels. For the regular app, run `./scripts/build-app.sh` and install `build/Inlay.app` in Applications. Both connect to an independently running server.

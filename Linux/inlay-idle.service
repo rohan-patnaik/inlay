@@ -1,0 +1,5 @@
+[Unit]
+Description=Unload idle Inlay model processes
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/inlay idle-stop
