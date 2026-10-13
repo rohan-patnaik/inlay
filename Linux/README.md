@@ -17,7 +17,7 @@ Token and personal vocabulary/preferences are private files under `~/.config/inl
 
 ## Installation layout
 
-Read upstream `Server/README.md` for model URLs, hashes and Linux CUDA package installation. Place weights and downloaded packages under your configured artifact drive. Keep its `server/helpers/resources` package together; set `package`, `speech_model`, and `text_model` in the private client config. Missing storage refuses startup; there is no alternate-drive/model/cloud fallback.
+Read upstream `Server/README.md` for model URLs, hashes and Linux CUDA package installation. Place weights and downloaded packages under your configured artifact drive. Keep its `server/helpers/resources` package together; set `artifact_mount`, `package`, `speech_model`, and `text_model` in the private client config. Missing storage refuses startup; there is no alternate-drive/model/cloud fallback.
 
 Install `inlay.py` to `~/.local/lib/inlay/inlay.py` and a `~/.local/bin/inlay` wrapper that executes it with Python 3 (`-B`). Install the three user systemd files in this directory, then `systemctl --user daemon-reload`. They run only on demand; don't enable the model service at boot.
 
